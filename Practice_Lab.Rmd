@@ -24,21 +24,23 @@ Make these into a bullet point list:
 
 Make it so this chunk shows the plot, but not the source code:
 
-```{r, echo=True}```
+```
+{r, echo=True}
 plot(1:10)
-
+```
 
 Make it so this chunk shows the code, but not the output:
 
-{r}
 ```
+{r echo=True, results='hide'}
 2 + 2
 ```
 
 Make it so the file can still knit even though this chunk has an error
 
-```{r}```
-<> 2 + a
+```{r echo=True, results='hide'}
+2 + a
+```
 
 ## Getting to know your classmates
 
